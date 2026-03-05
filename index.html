@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarva Solar - Leading Solar Energy Solutions</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./my_image/logo.png">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Sarva Solar provides top-notch solar energy solutions tailored to homes and businesses. Explore sustainable energy options with us.">
+  <meta name="keywords"
+    content="Solar energy, Solar solutions, Renewable energy, Solar panels, Sarva Solar, Clean energy">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Sarva Solar">
+
+  <!-- Open Graph Tags for Social Media -->
+  <meta property="og:title" content="Sarva Solar - Leading Solar Energy Solutions">
+  <meta property="og:description"
+    content="Discover sustainable solar energy solutions with Sarva Solar. Perfect for homes and businesses aiming for clean energy.">
+  <meta property="og:image" content="https://sarvasolar.in/my_image/logo.png">
+  <meta property="og:url" content="https://sarvasolar.in">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Tags for Social Media -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sarva Solar - Leading Solar Energy Solutions">
+  <meta name="twitter:description"
+    content="Explore clean solar energy with Sarva Solar. Perfect for sustainable businesses and homes.">
+  <meta name="twitter:image" content="https://sarvasolar.in/my_image/logo.png">
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMVzD+F9lnDulslkE8j/AhQKE9mLtE8/1j5H5i" crossorigin="anonymous">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourdomain.com">
+
+</head>
+
+
+<body class="bg-green-50"> <!-- Corrected "lass" to "class" -->
+
+
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto flex items-center justify-between px-4 py-4">
+      <!-- Logo -->
+      <a href="#" class="text-xl font-bold text-gray-900 flex items-center">
+        <img width="50px" src="./my_image/logo.png" alt="Sarva Solar Logo" />
+        <span class="text-yellow-400 flex m-auto ml-5">Sarva Solar</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex space-x-6 text-gray-700 p-4">
+        <a href="#" class="hover:text-yellow-500">Residential</a>
+        <a href="#" class="hover:text-yellow-500">Commercial</a>
+        <a href="#" class="hover:text-yellow-500">About</a>
+        <a href="#" class="hover:text-yellow-500">Contact</a>
+      </nav>
+
+      <!-- Action Buttons for Desktop -->
+      <div class="hidden lg:flex space-x-4">
+        <button class="flex bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-600">
+          <svg class="mr-2" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.66674 0.666755C8.66674 0.489944 8.73698 0.320374 8.862 0.19535C8.98703 0.070326 9.15659 8.80826e-05 9.33341 8.80826e-05C11.1009 0.00202915 12.7955 0.705031 14.0453 1.95485C15.2951 3.20468 15.9981 4.89924 16.0001 6.66676C16.0001 6.84357 15.9298 7.01314 15.8048 7.13816C15.6798 7.26318 15.5102 7.33342 15.3334 7.33342C15.1566 7.33342 14.987 7.26318 14.862 7.13816C14.737 7.01314 14.6667 6.84357 14.6667 6.66676C14.6652 5.25275 14.1027 3.89712 13.1029 2.89727C12.103 1.89742 10.7474 1.33501 9.33341 1.33342C9.15659 1.33342 8.98703 1.26318 8.862 1.13816C8.73698 1.01314 8.66674 0.843566 8.66674 0.666755ZM9.33341 4.00009C10.0406 4.00009 10.7189 4.28104 11.219 4.78114C11.7191 5.28123 12.0001 5.95951 12.0001 6.66676C12.0001 6.84357 12.0703 7.01314 12.1953 7.13816C12.3204 7.26318 12.4899 7.33342 12.6667 7.33342C12.8435 7.33342 13.0131 7.26318 13.1381 7.13816C13.2632 7.01314 13.3334 6.84357 13.3334 6.66676C13.3323 5.60621 12.9106 4.58941 12.1607 3.8395C11.4107 3.08958 10.3939 2.66781 9.33341 2.66675C9.15659 2.66675 8.98703 2.73699 8.862 2.86202C8.73698 2.98704 8.66674 3.15661 8.66674 3.33342C8.66674 3.51023 8.73698 3.6798 8.862 3.80483C8.98703 3.92985 9.15659 4.00009 9.33341 4.00009ZM15.3954 11.1594C15.7817 11.5468 15.9987 12.0716 15.9987 12.6188C15.9987 13.1659 15.7817 13.6907 15.3954 14.0781L14.7887 14.7774C9.32874 20.0048 -3.95793 6.72142 1.18874 1.24409L1.95541 0.577421C2.34325 0.201873 2.86336 -0.0058792 3.40321 -0.000888689C3.94306 0.00410182 4.45924 0.221434 4.84007 0.604088C4.86074 0.624755 6.09607 2.22942 6.09607 2.22942C6.46263 2.61451 6.66668 3.12604 6.66581 3.65769C6.66494 4.18934 6.45922 4.7002 6.09141 5.08409L5.31941 6.05476C5.74664 7.09283 6.37478 8.03625 7.16774 8.83082C7.96071 9.62538 8.90286 10.2554 9.94007 10.6848L10.9167 9.90809C11.3007 9.54056 11.8114 9.33508 12.3429 9.33434C12.8744 9.3336 13.3858 9.53764 13.7707 9.90409C13.7707 9.90409 15.3747 11.1388 15.3954 11.1594ZM14.4781 12.1288C14.4781 12.1288 12.8827 10.9014 12.8621 10.8808C12.7247 10.7446 12.5391 10.6682 12.3457 10.6682C12.1523 10.6682 11.9667 10.7446 11.8294 10.8808C11.8114 10.8994 10.4667 11.9708 10.4667 11.9708C10.3761 12.0429 10.2683 12.0902 10.1538 12.1079C10.0394 12.1257 9.92229 12.1133 9.81407 12.0721C8.47038 11.5718 7.2499 10.7886 6.2353 9.77547C5.22069 8.76237 4.43567 7.54304 3.93341 6.20009C3.88887 6.09039 3.87435 5.97081 3.89134 5.85365C3.90833 5.73648 3.95621 5.62595 4.03007 5.53342C4.03007 5.53342 5.10141 4.18809 5.11941 4.17075C5.25558 4.03341 5.33199 3.84783 5.33199 3.65442C5.33199 3.46101 5.25558 3.27543 5.11941 3.13809C5.09874 3.11809 3.87141 1.52142 3.87141 1.52142C3.73201 1.39643 3.55007 1.32949 3.3629 1.33432C3.17573 1.33915 2.9975 1.4154 2.86474 1.54742L2.09807 2.21409C-1.66326 6.73675 9.85074 17.6121 13.8141 13.8668L14.4214 13.1668C14.5637 13.0349 14.6492 12.8529 14.6598 12.6592C14.6704 12.4655 14.6052 12.2753 14.4781 12.1288Z"
+              fill="white"></path>
+          </svg>
+          +91 8985430100
+        </button>
+        <button class="openModal bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-600">GET A
+          QUOTE</button>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="menu-toggle" class="text-gray-700 md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden bg-white shadow-md px-4 py-2">
+      <a href="#" class="block py-2 text-gray-700 hover:text-yellow-500">Residential</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-yellow-500">Commercial</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-yellow-500">About</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-yellow-500">Contact</a>
+      <!-- Buttons for Mobile -->
+      <button
+        class="openModal w-full mt-2 bg-yellow-500 text-gray-900 font-bold py-3 rounded-full hover:bg-yellow-600">+91
+        8985430100</button>
+      <button class="w-full mt-2 bg-yellow-500 text-gray-900 font-bold py-3 rounded-full hover:bg-yellow-600">GET A
+        QUOTE</button>
+    </nav>
+  </header>
+
+  <!-- JavaScript to Toggle Mobile Menu -->
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+
+
+
+  <div id="modal" class="modal fixed inset-0 flex items-start justify-center z-10 h-screen " style="display:none">
+    <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-1/3 p-6 z-10 h-75 overflow-y-scroll">
+      <h2 class="text-lg font-semibold mb-4">Solar Inquiry Form</h2>
+      <form id="InquiryForm" method="POST">
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700">Full Name *</label>
+          <input type="text" name="full_name" required
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2">
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700">Email Address *</label>
+          <input type="email" name="email" required
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2">
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700">Phone *</label>
+          <input type="tel" name="phone" required
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
+            placeholder="India +91">
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700">Select Your State</label>
+          <select name="state"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2">
+            <option>Select</option>
+            <option>Andhra Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Chhattisgarh</option>
+            <option>Goa</option>
+            <option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option>Jharkhand</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Madhya Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Manipur</option>
+            <option>Meghalaya</option>
+            <option>Mizoram</option>
+            <option>Nagaland</option>
+            <option>Odisha</option>
+            <option>Punjab</option>
+            <option>Rajasthan</option>
+            <option>Sikkim</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>Tripura</option>
+            <option>Uttar Pradesh</option>
+            <option>Uttarakhand</option>
+            <option>West Bengal</option>
+            <option>Andaman and Nicobar Islands</option>
+            <option>Chandigarh</option>
+            <option>Dadra and Nagar Haveli and Daman and Diu</option>
+            <option>Lakshadweep</option>
+            <option>Delhi (National Capital Territory)</option>
+            <option>Puducherry</option>
+            <option>Jammu and Kashmir</option>
+            <option>Ladakh</option>
+
+            <!-- Add more states as needed -->
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700">Solar For Home/Business? *</label>
+          <select name="solar_for"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2">
+            <option>Select</option>
+            <option>Home</option>
+            <option>Business</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700">Select Monthly Average Electricity Bill
+            *</label>
+          <select name="electricity_bill"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2">
+            <option>Select</option>
+            <option>Less than ₹1000</option>
+            <option>₹1000 - ₹5000</option>
+            <option>More than ₹5000</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700">Interested in Finance? *</label>
+          <select name="finance_interest"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2">
+            <option>Select</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+
+        <div class="flex justify-end mt-4">
+          <button type="button" id="closeModal" class="px-4 py-2 bg-red-600 text-white rounded mr-2">Close</button>
+          <button type="submit" class="px-4 py-2 bg-green-600 text-white rounded">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Main Section -->
+  <section class="pt-20 bg-cover bg-center text-white text-center"
+    style="background-image: url('./my_image/banner.png');">
+    <div class="px-6 md:px-12 lg:px-24 max-w-4xl mx-auto mt-20">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Green Power, Bright Future.
+        Empowering a Sustainable World with Clean Energy Solutions
+      </h1>
+      <p class="text-md md:text-lg text-orange-500 mt-2">
+
+        Harness the power of the sun to make a positive impact on the planet.
+      </p>
+      <button type="button"
+        class="openModal mt-8 bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-500">Get a
+        Quote</button>
+    </div>
+
+    <!-- Info Cards Section -->
+    <div class="flex flex-wrap justify-center gap-6 mt-12 px-4 pb-5 md:px-8">
+      <!-- Card 1 -->
+      <div class="bg-gray-800 text-white p-6 rounded-lg w-full sm:w-72 md:w-80 shadow-lg">
+        <img src="my_image/h2.png" alt="Sustainable Designs" class="rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Cutting-Edge Solar Solutions for Every Home and Business</h2>
+        <!-- <p class="text-sm mb-4">With green designs and recycling, we're making the world eco-friendly.</p> -->
+        <!-- <a href="#" class="text-yellow-400 font-semibold">Discover Our Services</a> -->
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gray-800 text-white p-6 rounded-lg w-full sm:w-72 md:w-80 shadow-lg">
+        <img src="my_image/h3.png" alt="1k+ Customers" class="rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Trusted by Eco-Conscious Customers</h2>
+        <!-- <p class="text-sm mb-4">Join millions who trust us for eco-friendly solutions.</p> -->
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gray-800 text-white p-6 rounded-lg w-full sm:w-72 md:w-80 shadow-lg">
+        <img src="my_image/h5.webp" alt="Efficient Solar Panels" class="rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Unmatched Efficiency for Maximum Energy Savings</h2>
+        <!-- <p class="text-sm mb-4">Our solar panels deliver maximum efficiency, ensuring you get the most out of every ray
+          of sunshine.</p> -->
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container mx-auto mt-10 mb-10 p-8 bg-white shadow-lg rounded-lg">
+    <h1 class="text-2xl font-bold mb-5 text-center text-green-600">Sarva Solar Savings Calculator</h1>
+    <div class="flex flex-col md:flex-row md:space-x-8">
+      <!-- Input Section -->
+      <div class="md:w-1/2">
+        <!-- System Type Selection -->
+        <div class="mb-4 w-full">
+          <label class="block text-sm font-medium text-gray-700">Select System Type</label>
+          <select id="systemType"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-500">
+            <option value="home">
+              Home
+            </option>
+            <option value="commercial">Commercial</option>
+          </select>
+        </div>
+  
+       
+  
+        <!-- Monthly Electricity Bill (Price Input Mode) -->
+      <div class="mb-4" id="priceInputField">
+        <label class="block text-sm font-medium text-gray-700">Monthly Electricity Bill (₹)</label>
+        <input type="number" id="monthlyBill"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-500"
+          placeholder="Enter amount" />
+      </div>
+
+      <!-- KW Energy Input (KW Mode) -->
+      <div class="mb-4" id="kwEnergyInputField" style="display: none;">
+        <label class="block text-sm font-medium text-gray-700">Energy Input (KW)</label>
+        <input type="number" id="kwInput"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-500"
+          placeholder="Enter KW value" />
+      </div>
+
+     
+      <p onclick="toggleInputMode()"
+        class="w-full font-bold py-2 px-4 hover:text-blue-600 cursor-pointer" id="toggleButton">
+        Switch to KW Energy Input.
+    </p>
+        <!-- Calculate Button -->
+        <button onclick="calculateSavings()"
+          class="w-full bg-green-600 text-white font-bold py-2 px-4 rounded-md hover:bg-green-700">Calculate
+          Savings</button>
+      </div>
+  
+      <!-- Output Section -->
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <div class="grid grid-cols-2 gap-4 text-gray-700 text-center">
+          <!-- System Size -->
+          <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+            <p class="text-sm font-medium">System Size</p>
+            <p class="text-lg font-semibold">1 kW</p>
+          </div>
+  
+          <!-- Space Required -->
+          <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+            <p class="text-sm font-medium">Space Required</p>
+            <p class="text-lg font-semibold">80 sqft</p>
+          </div>
+  
+          <!-- Annual Energy Generated -->
+          <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+            <p class="text-sm font-medium">Annual Energy Generated</p>
+            <p class="text-lg font-semibold">1,440 Units</p>
+          </div>
+  
+          <!-- Annual Savings -->
+          <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+            <p class="text-sm font-medium">Annual Savings</p>
+            <p class="text-lg font-semibold">₹12,960</p>
+          </div>
+  
+          <!-- Price -->
+          <div class="bg-gray-100 p-4 rounded-lg shadow-md col-span-2">
+            <p class="text-sm font-medium">Price (Excluding Subsidy)</p>
+            <p class="text-lg font-semibold">₹96,589</p>
+          </div>
+  
+          <!-- Subsidy -->
+          <div class="bg-gray-100 p-4 rounded-lg shadow-md col-span-2">
+            <p class="text-sm font-medium">Subsidy</p>
+            <p class="text-lg font-semibold">₹30,000</p>
+          </div>
+        </div>
+  
+        <!-- Buttons -->
+        <div class="flex space-x-4 justify-center mt-4">
+          <button class="openModal bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600">Start Your Solar
+            Journey</button>
+          <!-- <button class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"></button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <section class="text-center py-20 bg-cover bg-center" style="background-image: url('./my_image/img5.png');">
+    <!-- Main Heading and Description -->
+    <div class="text-white px-6 md:px-12 lg:px-24 max-w-4xl mx-auto">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">
+        Green<span class="text-yellow-400">☘️</span>solutions<br>for a sustainable future.
+      </h1>
+      <!-- <p class="text-md md:text-lg text-gray-300 mt-2">
+        At GreenPark, our mission is to lead the way in sustainability through a range of innovative solutions designed
+        to protect our planet.
+      </p> -->
+      <button class="mt-8 bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-500">Our
+        Services</button>
+    </div>
+
+    <!-- Info Cards Section -->
+    <div class="flex flex-wrap justify-center gap-6 mt-12 px-4 md:px-8">
+      <!-- Card 1 -->
+      <div class="bg-gray-800 text-white p-6 rounded-lg w-full sm:w-72 md:w-80 shadow-lg">
+        <img src="my_image/consultations-3.jpg" alt="Sustainable Designs" class="rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Solar Consultation and Assessment</h2>
+        <!-- <p class="text-sm mb-4">Our solar panels deliver maximum efficiency.</p> -->
+        <!-- <button class="bg-gray-700 text-white font-semibold py-2 px-4 rounded-full hover:bg-gray-600">Let's
+          Start</button> -->
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gray-800 text-white p-6 rounded-lg w-full sm:w-72 md:w-80 shadow-lg">
+        <img src="my_image/solarInstall.webp" alt="Advanced Recycling Systems" class="rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Solar Installation</h2>
+        <!-- <p class="text-sm mb-4">Our solar panels deliver maximum efficiency.</p> -->
+        <!-- <button class="bg-yellow-400 text-gray-900 font-semibold py-2 px-4 rounded-full hover:bg-yellow-500">Let's
+          Start</button> -->
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gray-800 text-white p-6 rounded-lg w-full sm:w-72 md:w-80 shadow-lg">
+        <img src="my_image/battery.jpg" alt="Renewable Energy Solutions" class="rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Battery Storage Solutions</h2>
+        <!-- <p class="text-sm mb-4">Our solar panels deliver maximum efficiency.</p> -->
+        <!-- <button class="bg-gray-700 text-white font-semibold py-2 px-4 rounded-full hover:bg-gray-600">Let's
+          Start</button> -->
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Features Section -->
+  <section class="container mx-auto px-6 py-12 md:py-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-center bg-white">
+    <div class="bg-green-50 text-green-800 p-6 rounded-lg shadow-lg">
+      <!-- <img src="path/to/feature1-image.jpg" alt="Sustainability Style" class="rounded-md mb-4"> -->
+      <h3 class="text-xl font-semibold mb-2">Where Sustainability meets Style.</h3>
+      <p class="text-gray-700 mb-4">With green designs and recycling, we're making the world eco-friendly.</p>
+      <a href="#" class="text-orange-500 font-semibold hover:text-orange-600">Discover Our Services</a>
+    </div>
+    <div class="bg-green-50 text-green-800 p-6 rounded-lg shadow-lg">
+      <!-- <img src="path/to/feature2-image.jpg" alt="10M+ Customers" class="rounded-md mb-4"> -->
+      <h3 class="text-2xl font-semibold mb-2">10M+ Customers</h3>
+      <p class="text-gray-700">Our solutions have reached millions, proving that eco-conscious choices can be powerful.
+      </p>
+    </div>
+    <div class="bg-green-50 text-green-800 p-6 rounded-lg shadow-lg">
+      <!-- <img src="path/to/feature3-image.jpg" alt="Efficient solar panels" class="rounded-md mb-4"> -->
+      <h3 class="text-xl font-semibold mb-2">Efficient solar panels</h3>
+      <p class="text-gray-700">Our solar panels deliver maximum efficiency, ensuring you get the most out of every ray
+        of
+        sunshine.</p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="max-w-6xl mx-auto px-6 py-12 text-center">
+    <div class="flex flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0 md:justify-center">
+      <img src="my_image/2.jpg" alt="Solar panels"
+        class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg">
+      <h1 class="text-3xl font-bold text-gray-800">
+        Our mission 🌍 is to deliver innovative, eco-friendly solutions that support recycling and sustainable living.
+      </h1>
+      <img src="my_image/img6.png" alt="Wind energy"
+        class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg">
+    </div>
+    <p class="mt-4 text-gray-600">
+      We believe in a future where style and sustainability coexist harmoniously.
+    </p>
+    <button class="mt-6 px-6 py-2 bg-yellow-400 text-white font-semibold rounded-md hover:bg-yellow-500">
+      About Sarva Solar
+    </button>
+  </section>
+
+  <!-- Eco-Friendly Innovation Section -->
+  <section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="bg-green-50 p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold text-gray-800">Leading the Way in Eco-Friendly Innovation</h2>
+      <p class="mt-4 text-gray-600">
+        Our commitment to a greener future is reflected in every product we create and service we provide.
+      </p>
+    </div>
+    <div class="bg-green-50 p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold text-gray-800">Our people are the heart of our mission</h2>
+      <p class="mt-4 text-gray-600">
+        Our mission is to inspire and empower individuals and communities to make environmentally responsible decisions.
+      </p>
+      <!-- <img src="image3.jpg" alt="Windmill and solar panels" class="mt-4 rounded-lg shadow-lg"> -->
+    </div>
+  </section>
+
+  <!-- CEO Section -->
+  <section class="max-w-6xl mx-auto bg-white p-8 rounded-lg shadow-lg flex items-center space-x-8">
+    <!-- Text Section -->
+    <div class="w-1/2">
+      <h2 class="text-orange-500 text-lg font-semibold">Our CEO</h2>
+      <div class="w-10 border-t-4 border-orange-500 my-2"></div>
+      <p class="text-gray-700 mt-4">
+        Jupalli Venkatesh Kuma, CEO of Sarva Solar, is dedicated to advancing sustainable energy solutions that empower
+        communities and foster environmental stewardship. With a passion for innovation and a commitment to excellence,
+        he leads Sarva Solar in its mission to deliver cutting-edge solar technology, ensuring a cleaner and brighter
+        future for all. Under his guidance, the company strives to make renewable energy accessible and efficient,
+        paving the way for a sustainable tomorrow.
+      </p>
+    </div>
+    <!-- Image Section -->
+    <div class="w-1/2 flex flex-col items-center">
+      <img src="./my_image/profile.jpeg" alt="CEO Jupalli Venkatesh Kuma"
+        class="w-48 h-48 object-cover rounded-lg mb-4">
+      <div class="text-center">
+        <p class="text-sm font-medium text-gray-600">CEO / Founder</p>
+        <p class="text-lg font-semibold text-gray-800">Jupalli Venkatesh Kumar</p>
+        <div class="mt-2 flex justify-center space-x-4">
+          <a href="javascript:void(0)" class="text-gray-500 hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+          <!-- Include other social media icons as needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="max-w-6xl mx-auto px-6 py-12 flex justify-center items-center">
+    <!-- Card 1 -->
+    <div class="bg-[#069668] text-white rounded-lg shadow-lg p-4 mx-2 w-72 flex flex-col h-full">
+      <img src="my_image/pic3.jpeg" alt="Solar Consultation" class="rounded-lg mb-4 object-cover h-48 w-full">
+      <!-- <h3 class="text-center text-lg font-bold mt-auto">Solar Consultation and Assessment</h3> -->
+    </div>
+
+    <!-- Card 2 -->
+    <div class=" text-white rounded-lg shadow-lg p-4 mx-2 w-72 flex flex-col h-full">
+      <img src="my_image/pic2.jpg" alt="Solar Installation" class="rounded-lg mb-4 object-cover h-48 w-full">
+      <!-- <h3 class="text-center text-lg font-bold mt-auto">Solar Installation</h3> -->
+    </div>
+
+    <!-- Card 3 -->
+    <div class="text-white rounded-lg shadow-lg p-4 mx-2 w-72 flex flex-col h-full">
+      <img src="my_image/pic1.jpg" alt="Battery Storage Solutions" class="rounded-lg mb-4 object-cover h-48 w-full">
+      <!-- <h3 class="text-center text-lg font-bold mt-auto">Battery Storage Solutions</h3> -->
+    </div>
+  </section>
+
+  <!-- Locations Section -->
+  <section class="max-w-6xl mx-auto px-6 py-12 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">Our Locations</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+      <!-- Telangana Section -->
+      <div class="location-state p-4 border rounded shadow-lg bg-white flex flex-col justify-between">
+        <h3 class="text-2xl font-bold text-gray-700">Telangana</h3>
+        <p class="text-gray-600 mt-2">Hyderabad, Warangal</p>
+      </div>
+      <!-- Andhra Pradesh Section -->
+      <div class="location-state p-4 border rounded shadow-lg bg-white flex flex-col justify-between">
+        <h3 class="text-2xl font-bold text-gray-700">Andhra Pradesh</h3>
+        <p class="text-gray-600 mt-2">Guntur, Vijayawada, Eluru, Rajahmundry, Visakhapatnam, Tirupati, Kadapa, Kurnool,
+          Nellore</p>
+      </div>
+      <!-- West Bengal Section -->
+      <div class="location-state p-4 border rounded shadow-lg bg-white flex flex-col justify-between">
+        <h3 class="text-2xl font-bold text-gray-700">West Bengal</h3>
+        <p class="text-gray-600 mt-2">Kolkata</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="max-w-6xl mx-auto px-6 py-12 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">Our Channel Partners</h2>
+    <div class="flex justify-center items-center gap-8 mt-8 flex-wrap">
+      <img src="my_image/chanelPartner.jpeg" alt="IEC Certificate"
+        class="h-20 transition-transform transform hover:scale-110">
+      <img src="my_image/channel_patner2.png" alt="Second Certificate"
+        class="w-24 h-auto transition-transform transform hover:scale-110">
+    </div>
+  </section>
+
+  <footer class="flex justify-between items-center p-8 m-auto">
+    <div>
+      <img width="250px" src="my_image/logo.png" />
+    </div>
+    <!-- Left Section -->
+    <div>
+      <ul class="mt-8 space-y-2 text-sm">
+        <li>RESIDENTIAL</li>
+        <li>COMMERCIAL</li>
+        <li>ABOUT US</li>
+        <li>BLOGS</li>
+        <li>CAREERS</li>
+        <li>CONTACT US</li>
+      </ul>
+    </div>
+
+    <!-- Right Section -->
+    <div class="space-y-6 text-sm">
+      <button type="button"
+        class="openModal mt-8 bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-500">Get a
+        Quote</button>
+      <div>
+        <a href="tel:8985430100">+91 8985430100</a>
+        <a href="tel:8985430100">+91 9160513161</a>
+        <p> <a href="jupallivenkateshkumar@gmail.com">solarsarva@gmail.com</a></p>
+        <p>📍 Sri A Raghu Vikram Aditya Solar Installation Pvt, Ltd <br>
+          Brodipet 5/15 Guntur Andhra Pradesh pincode:-522002, India
+        </p>
+      </div>
+      <div class="flex space-x-4">
+        <li><a href="javascript:void(0)" class="text-white hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li><a href="javascript:void(0)" class="text-white hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li><a href="javascript:void(0)" class="text-white hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li><a href="javascript:void(0)" class="text-white hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    // Handle hybrid system backup duration display
+    document.getElementById('systemType').addEventListener('change', function () {
+      const backupField = document.getElementById('backupDurationField');
+      if (this.value === 'hybrid') {
+        backupField.style.display = 'block';
+      } else {
+        backupField.style.display = 'none';
+      }
+    });
+
+    // Example data based on the table
+    const systemData = {
+      "on-grid": {
+        180: { capacity: "2 kWp", energy: "260 kWh", savings: "₹15,000" },
+        360: { capacity: "4 kWp", energy: "520 kWh", savings: "₹30,000" },
+        600: { capacity: "6 kWp", energy: "865 kWh", savings: "₹50,000" },
+        1000: { capacity: "11 kWp", energy: "1585 kWh", savings: "₹80,000" },
+        2300: { capacity: "23 kWp", energy: "3315 kWh", savings: "₹1,00,000" },
+        3000: { capacity: "30 kWp", energy: "4325 kWh", savings: "₹1,30,000" }
+      },
+      "hybrid": {
+        180: { capacity: "2 kWp", energy: "200 kWh", savings: "₹10,000" },
+        360: { capacity: "3 kWp", energy: "400 kWh", savings: "₹20,000" },
+        600: { capacity: "6 kWp", energy: "600 kWh", savings: "₹35,000" },
+        1000: { capacity: "9 kWp", energy: "900 kWh", savings: "₹50,000" }
+      }
+    };
+
+    // Calculation logic
+    function calculateSavings() {
+      const systemType = document.getElementById('systemType').value;
+      const area = document.getElementById('areaRequired').value;
+
+      const selectedSystem = systemData[systemType][area];
+
+      document.getElementById('pvCapacity').innerText = `PV Capacity: ${selectedSystem.capacity}`;
+      document.getElementById('annualEnergy').innerText = `Annual Energy Generated: ${selectedSystem.energy}`;
+      document.getElementById('savings').innerText = `Annual Savings: ${selectedSystem.savings}`;
+    }
+  </script>
+  <script>
+    const form = document.getElementById("InquiryForm");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      // Manually add the form data
+      formData.append("access_key", "d1278646-fa50-4071-844e-7b6b34b9059f");
+      formData.append("subject", "New Submission of Career Form");
+
+      // Use the Fetch API to send the data
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status === 200) {
+            console.log(json.message);
+          } else {
+            console.log(response);
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .then(function () {
+          form.reset();
+        });
+    });
+
+    // Add functionality to close modal
+    document.getElementById("closeModal").addEventListener("click", function () {
+      document.getElementById("modal").style.display = "none";
+    });
+  </script>
+  <script>
+    // JavaScript to handle modal open and close
+    const modal = document.getElementById('modal');
+    const closeModal = document.getElementById('closeModal');
+
+    // Select all buttons with the 'openModal' class
+    const openModalButtons = document.querySelectorAll('.openModal');
+
+    // Loop through each button and add a click event listener
+    openModalButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        modal.style.display = 'flex';
+      });
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    // Close modal when clicking outside of the modal content
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+
+  </script>
+
+
+  <!-- JavaScript to Toggle Mobile Menu -->
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+  <script>
+    // Toggle Mobile Menu
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+<script>
+  let isKWInputMode = false;
+
+  function toggleInputMode() {
+    isKWInputMode = !isKWInputMode;
+    
+    // Toggle input fields
+    document.getElementById("priceInputField").style.display = isKWInputMode ? "none" : "block";
+    document.getElementById("kwEnergyInputField").style.display = isKWInputMode ? "block" : "none";
+    
+    // Update button text
+    document.getElementById("toggleButton").textContent = isKWInputMode ? "Switch to Price Input" : "Switch to KW Energy Input";
+  }
+
+  function calculateSavings() {
+    // Add calculation logic here based on selected input type
+    if (isKWInputMode) {
+      const kwInput = document.getElementById("kwInput").value;
+      console.log("Calculating based on KW Input:", kwInput);
+    } else {
+      const monthlyBill = document.getElementById("monthlyBill").value;
+      console.log("Calculating based on Monthly Bill:", monthlyBill);
+    }
+  }
+</script>
+
+
+
+</body>
+
+</html>
