@@ -725,33 +725,97 @@
   </script>
 
 <script>
-  let isKWInputMode = false;
 
-  function toggleInputMode() {
-    isKWInputMode = !isKWInputMode;
-    
-    // Toggle input fields
-    document.getElementById("priceInputField").style.display = isKWInputMode ? "none" : "block";
-    document.getElementById("kwEnergyInputField").style.display = isKWInputMode ? "block" : "none";
-    
-    // Update button text
-    document.getElementById("toggleButton").textContent = isKWInputMode ? "Switch to Price Input" : "Switch to KW Energy Input";
-  }
+let isKWInputMode = false;
 
-  function calculateSavings() {
-    // Add calculation logic here based on selected input type
-    if (isKWInputMode) {
-      const kwInput = document.getElementById("kwInput").value;
-      console.log("Calculating based on KW Input:", kwInput);
-    } else {
-      const monthlyBill = document.getElementById("monthlyBill").value;
-      console.log("Calculating based on Monthly Bill:", monthlyBill);
+function toggleInputMode() {
+  isKWInputMode = !isKWInputMode;
+
+  document.getElementById("priceInputField").style.display =
+    isKWInputMode ? "none" : "block";
+
+  document.getElementById("kwEnergyInputField").style.display =
+    isKWInputMode ? "block" : "none";
+
+  document.getElementById("toggleButton").textContent =
+    isKWInputMode ? "Switch to Price Input" : "Switch to KW Energy Input";
+}
+
+function calculateSavings() {
+
+  let systemKW;
+
+  // Average electricity cost in India
+  const tariff = 8;
+
+  // Annual generation per kW
+  const generationPerKW = 1440;
+
+  // Solar installation cost per kW
+  const pricePerKW = 70000;
+
+  if (isKWInputMode) {
+
+    const kwInput = parseFloat(document.getElementById("kwInput").value);
+
+    if (!kwInput || kwInput <= 0) {
+      alert("Please enter a valid KW value");
+      return;
     }
+
+    systemKW = kwInput;
+
+  } else {
+
+    const monthlyBill = parseFloat(document.getElementById("monthlyBill").value);
+
+    if (!monthlyBill || monthlyBill <= 0) {
+      alert("Please enter your electricity bill");
+      return;
+    }
+
+    // Convert bill to units
+    const monthlyUnits = monthlyBill / tariff;
+
+    // Estimate solar system size
+    systemKW = monthlyUnits / 120;
   }
+
+  systemKW = Math.ceil(systemKW);
+
+  const spaceRequired = systemKW * 80;
+  const annualUnits = systemKW * generationPerKW;
+  const annualSavings = annualUnits * tariff;
+  const systemPrice = systemKW * pricePerKW;
+
+  let subsidy = 0;
+
+  if (systemKW <= 2) {
+    subsidy = systemKW * 30000;
+  }
+  else if (systemKW <= 3) {
+    subsidy = 60000;
+  }
+  else {
+    subsidy = 78000;
+  }
+
+  const cards = document.querySelectorAll(".grid .text-lg");
+
+  cards[0].innerText = systemKW + " kW";
+  cards[1].innerText = spaceRequired + " sqft";
+  cards[2].innerText = annualUnits.toLocaleString() + " Units";
+  cards[3].innerText = "₹" + annualSavings.toLocaleString();
+  cards[4].innerText = "₹" + systemPrice.toLocaleString();
+  cards[5].innerText = "₹" + subsidy.toLocaleString();
+
+}
+
 </script>
 
 
 
 </body>
+
 
 </html>
